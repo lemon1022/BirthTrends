@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BirthTrends</title>
+    <link rel="stylesheet" href="fonts/icomoon.css" />
+    <link rel="stylesheet" href="css/region.css" />
+    <script src="js/echarts.min.js"></script>
+    <script src="js/flexible.js"></script>
+    <script src="js/jquery.min.js"></script>
+</head>
+
+<body>
+<!-- 父容器大盒子 -->
+<div class="viewport">
+
+    <div class="column">
+
+        <div class="panel overview">
+            <div class="inner">
+                <ul>
+                    <li>
+                        <span>
+                  <i class="icon-dot" style="color: #006cff"><a class="link_style" href="index.html" >总览页面</a></i>
+                </span>
+                    </li>
+                    <li class="item">
+                        <span>
+                  <i class="icon-dot" style="color: #6acca3" ><a class="link_style" href="#">地区页面</a></i>
+
+                </span>
+                    </li>
+                    <li>
+                        <span>
+                  <i class="icon-dot" style="color: #6acca3"><a class="link_style" href="people.html">人口结构</a></i>
+                </span>
+                    </li>
+                    <li>
+                        <span>
+                  <i class="icon-dot" style="color: #ed3f35"><a class="link_style" href="challenge.html">生育挑战</a></i>
+                </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="users panel">
+            <div class="inner">
+                <!-- 第一个下拉框 -->
+                <span class="type">数据(请选择)</span>
+<!--                <select id="select1">-->
+<!--                    <option value="人口密度">人口密度</option>-->
+<!--                    <option value="常驻人口">常驻人口</option>-->
+<!--                    <option value="抚养比">抚养比</option>-->
+<!--                    <option value="乡村人口">人口密度</option>-->
+<!--                    <option value="出生率">出生率</option>-->
+<!--                    <option value="死亡率">死亡率</option>-->
+
+<!--                </select>-->
+                <select id="select1" onchange="updateSelect2()">
+                    <option value="people_65">老年人口占比</option>
+                    <option value="people_num">总人口</option>
+                    <option value="people_country">城镇人口</option>
+                    <option value="birth_rate">人口出生率</option>
+                    <option value="live_old">平均寿命</option>
+                    <option value="people_crowd">人口密度</option>
+                    <option value="death_rate">死亡率</option>
+                    <option value="people_town">乡村人口</option>
+                    <option value="fy_rate">总抚养比</option>
+                    <option value="natural_rate">自然增长率</option>
+                </select>
+
+                <!--        <br><br>-->
+                <span class="type">年份（请选择）</span>
+                <!-- 第二个下拉框 -->
+<!--                <select id="select2">-->
+<!--                    <option value="选项A">选项A</option>-->
+<!--                    <option value="选项B">选项B</option>-->
+<!--                    <option value="选项C">选项C</option>-->
+<!--                </select>-->
+
+                <select id="select2">
+<!--                    <option value="option1">Option 1</option>-->
+<!--                    <option value="option2">Option 2</option>-->
+<!--                    <option value="option3">Option 3</option>-->
+                </select>
+
+                <!-- 按钮，调用 showOptions 函数 -->
+                <button onclick="showOptions()">查询</button>
+
+
+                </div>
+
+
+        </div>
+        <!-- 地图模块 -->
+        <div class="map">
+            <div class="chart">
+                <div class="geo"></div>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+<!--<script src="js/region.js"></script>-->
+<!-- 想使用中国地图必须先引用这个china.js文件 -->
+<script src="js/china.js"></script>
+<!-- 引入我们自己的地图js文件 -->
+<script src="js/region.js"></script>
+
+
+</body>
+</html>

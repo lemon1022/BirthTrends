@@ -1,0 +1,89 @@
+/* Taken from https://github.com/cpsievert/LDAvis */
+/* Copyright 2013, AT&T Intellectual Property */
+/* MIT Licence */
+
+
+input[type="text"] {
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+}
+button{
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    color: white;
+}
+path {
+    height: 100rem;
+    fill: none;
+    stroke: none;
+    /*background-color: #0bace6;*/
+}
+
+div{
+    /*background-color: red;*/
+}
+/*div {*/
+/*    color: #ff9900;*/
+/*}*/
+text {
+    fill: #ffffff;
+}
+.dot{
+    /*font-size: 120px;*/
+    color: #fff!important;
+    fill: #FFA500!important;
+
+}
+
+.txt{
+    fill: #ffffff!important;
+}
+.dot:hover{
+    fill:#FF0000!important;
+}
+rect{
+    /*fill: #ffffff!important;*/
+}
+body {
+    color: #ffffff;
+    zoom: 120%;
+    margin-top: 10px;
+    margin-left: 160px;
+    /*background-color: #001b44;*/
+    background: url(../images/bg.jpg) no-repeat 0 0 / cover;
+}
+
+.xaxis .tick.major {
+
+    fill: black;
+    stroke: black;
+    stroke-width: 0.1;
+    opacity: 0.7;
+}
+/*.con{*/
+/*    height: 100rem;*/
+/*    width: 20rem;*/
+/*    color: #0bace6;*/
+/*}*/
+
+.slideraxis {
+
+    fill: black;
+    stroke: black;
+    stroke-width: 0.4;
+    opacity: 1;
+}
+
+text {
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+/* IPython Notebook CSS to allow visualization to fit */
+/* I'm open to a better way of accomplishing this goal... */
+.container {
+    width:1600px !important;
+}
+/* This is for nbviewer's benefit since the above wasn't enough... */
+.output_area { width:1600px !important; }

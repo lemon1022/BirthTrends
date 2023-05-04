@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BirthTrends</title>
+    <link rel="stylesheet" href="fonts/icomoon.css" />
+    <link rel="stylesheet" href="css/people.css" />
+    <script src="js/echarts.min.js"></script>
+    <script src="js/flexible.js"></script>
+    <script src="js/jquery.min.js"></script>
+</head>
+
+<body>
+<!-- 父容器大盒子 -->
+<div class="viewport">
+    <div class="column">
+        <!-- 概览区域模块制作 -->
+        <div class="panel overview">
+            <div class="inner">
+                <ul>
+                    <li>
+                        <span>
+                  <i class="icon-dot" style="color: #006cff"><a class="link_style" href="index.html" >总览页面</a></i>
+                </span>
+                    </li>
+                    <li class="item">
+                        <span>
+                  <i class="icon-dot" style="color: #6acca3" ><a class="link_style" href="region.html">地区页面</a></i>
+
+                </span>
+                    </li>
+                    <li>
+                        <span>
+                  <i class="icon-dot" style="color: #6acca3"><a class="link_style" href="#">人口结构</a></i>
+                </span>
+                    </li>
+                    <li>
+                        <span>
+                  <i class="icon-dot" style="color: #ed3f35"><a class="link_style" href="challenge.html">生育挑战</a></i>
+                </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 监控区域模块制作 -->
+        <div class="panel monitor">
+            <div class="inner">
+                <h3>全国性别比例历年变化情况</h3>
+                    <div class="chart1">
+                        <div class="gen_ratio"></div>
+                    </div>
+            </div>
+        </div>
+        <!-- 点位分布统计模块制作 -->
+        <div class="point panel">
+            <div class="inner">
+                <h3>年龄结构</h3>
+                <div class="chart1">
+                    <div class="pie"></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="column">
+
+        <div class="panel map">
+            <h3>
+                <span style="visibility: hidden" class="icon-cube"></span>
+            </h3>
+
+            <div class="inner">
+                <h3>失业人数及失业率</h3>
+                <div class="chart">
+                    <div class="lossbar"></div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <!-- 用户统计模块 -->
+        <div class="users panel">
+            <div class="inner">
+                <h3>就业人数变化</h3>
+                <div class="chart">
+                    <div class="bar"></div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="column">
+        <!-- 人口变化 -->
+        <div class="sales panel">
+            <div class="inner">
+                <div class="caption">
+                    <h3>就业结构</h3>
+
+                </div>
+                <div class="chart">
+                    <div class="line"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrap">
+            <div class="channel panel">
+                <div class="inner">
+                    <h3>教育程度</h3>
+                    <div class="data">
+                        <div class="radar"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- 中国预期平均寿命数据 -->
+        <div class="last panel">
+            <div class="inner">
+                <h3>未受教育人数占比</h3>
+                <div class="chart">
+                    <div class="averLife"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="js/people.js"></script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BirthTrends</title>
+    <link rel="stylesheet" href="fonts/icomoon.css" />
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/echarts/4.7.0/echarts.min.js"></script>
+    <link rel="stylesheet" href="css/challenge.css" />
+    <script src="js/new-echarts.min.js"></script>
+    <script src="js/flexible.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/echarts-wordcloud.min.js"></script>
+    <script src="js/wordCloud.js"></script>
+</head>
+
+<body>
+<!-- 父容器大盒子 -->
+<div class="viewport">
+    <div class="column">
+        <!-- 概览区域模块制作 -->
+        <div class="panel overview">
+            <div class="inner">
+                <ul>
+                    <li>
+                        <span>
+                  <i class="icon-dot" style="color: #006cff"><a class="link_style" href="index.html" >总览页面</a></i>
+                </span>
+                    </li>
+                    <li class="item">
+                        <span>
+                  <i class="icon-dot" style="color: #6acca3" ><a class="link_style" href="region.html">地区页面</a></i>
+
+                </span>
+                    </li>
+                    <li>
+                        <span>
+                  <i class="icon-dot" style="color: #6acca3"><a class="link_style" href="people.html">人口结构</a></i>
+                </span>
+                    </li>
+                    <li>
+                        <span>
+                  <i class="icon-dot" style="color: #ed3f35"><a class="link_style" href="#">生育挑战</a></i>
+                </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 各省出生率 -->
+        <div class="map">
+            <h3>
+                <span class="icon-cube"></span>
+                各省历年出生率
+            </h3>
+            <div class="chart">
+                <div class="geo1"></div>
+            </div>
+        </div>
+        <!-- 点位分布统计模块制作 -->
+        <div class="point1 panel">
+            <div class="inner">
+                <h3>第一孩孕育年龄占比</h3>
+                <div class="chart">
+                    <div class="pie1"></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="column">
+        <div class="panel monitor1">
+            <div class="inner">
+                <div class="content1" style="display: block;">
+
+                       <h3>解决措施</h3>
+
+                        <div class="suggestion">
+                            <ul class="suggestion_ul">
+
+                            </ul>
+                        </div>
+<!--                        <div class="marquee-view">-->
+<!--                            <div class="marquee"> </div>-->
+<!--                        </div>-->
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="panel monitor1">
+            <div class="inner">
+                <h3>离婚率及结婚登记对数</h3>
+                <div class="content2" style="display: block;">
+
+                </div>
+            </div>
+        </div>
+        <!-- 用户统计模块 -->
+        <div class="users panel">
+            <div class="inner">
+                <h3>抚养比(%)</h3>
+                <div class="chart">
+                    <div class="bar"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="column">
+        <div class="panel overview">
+            <div class="inner">
+                <ul>
+                    <li>
+                        <span>
+                  <i class="icon-dot" style="color: #006cff"><a class="link_style" href="topic.html" target="_blank">微博及抖音相关评论LDA分析与主题聚类可视化</a></i>
+                </span>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="panel monitor">
+            <div class="inner">
+                <h3>&nbsp;&nbsp;抵抗生育原因词云图</h3>
+                <div class="cchart">
+                    <div class="cloud"></div>
+                </div>
+
+            </div>
+        </div>
+        <!-- 点位分布统计模块制作 -->
+        <div class="point panel">
+            <div class="inner">
+                <h3>分年龄段生育率</h3>
+                <div class="chart">
+                    <div class="pie"></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="js/challenge.js"></script>
+<!-- 想使用中国地图必须先引用这个china.js文件 -->
+<script src="js/china.js"></script>
+
+
+
+</body>
+</html>
